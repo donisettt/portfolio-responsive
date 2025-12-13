@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Donitech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-pixel">=</span>donitech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="text-center">
+                <p class="section-subtitle">MY WORKS</p>
+                <h1 class="section-heading mb-3">Project yang Pernah Saya Kerjakan</h1>
+                <p class="lead text-muted mb-5" style="max-width: 700px; margin: 0 auto;">
+                    Berikut adalah kumpulan project yang saya kerjakan untuk berbagai kebutuhan, mulai dari website bisnis, dashboard internal, hingga aplikasi mobile.
+Setiap project dibangun dengan fokus pada fungsi, performa, dan pengalaman pengguna, bukan sekadar tampilan.
+                </p>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter text-center mb-5">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row portfolio-container">
+                <!-- Web Project 1 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="web">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project/travel-booking.png" alt="Travel Booking Platform">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Web Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Travel Booking Platform</h3>
+                            <p class="text-muted mb-3">Platform travel lengkap dengan fitur shopping cart, payment gateway integration, dan admin dashboard untuk management produk dan order.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Personal Project</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/donisettt/donitrip-travel-booking" class="btn btn-sm btn-outline-dark rounded-pill" target="_blank">
+                                    <i class="bi bi-github me-1"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Project 1 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="mobile">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=500&fit=crop" alt="Food Delivery App">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Mobile Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Food Delivery App</h3>
+                            <p class="text-muted mb-3">Aplikasi mobile untuk pesan antar makanan dengan fitur real-time tracking, payment integration, dan rating system untuk restaurant.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Google Maps</span>
+                                <span class="tech-badge">Redux</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">
+                                    <i class="bi bi-play-circle me-1"></i> View Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">
+                                    <i class="bi bi-info-circle me-1"></i> Case Study
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 2 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="web">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="images/project/foodi-umkm.png" alt="Corporate Website">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Web Design</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>POS & Online Ordering System</h3>
+                            <p class="text-muted mb-3">FOODI UMKM adalah sistem manajemen restoran lengkap. Dirancang khusus untuk UMKM kuliner di Indonesia, sistem ini menyediakan solusi digital komprehensif mulai dari pemesanan online hingga manajemen operasional restoran.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">Laravel</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">CMS Admin Panel</span>
+                                <span class="tech-badge">Landing Page</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://foodi-umkm-demo-production.up.railway.app/" class="btn btn-sm btn-outline-primary rounded-pill" target="_blank">
+                                    <i class="bi bi-eye me-1"></i> Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Project 2 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="mobile">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=500&fit=crop" alt="Fitness Tracker">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Mobile Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Fitness Tracker App</h3>
+                            <p class="text-muted mb-3">Aplikasi tracking fitness dengan fitur workout plans, calorie counter, progress tracking, dan social sharing untuk motivasi bersama.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">SQLite</span>
+                                <span class="tech-badge">REST API</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">
+                                    <i class="bi bi-download me-1"></i> Download APK
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">
+                                    <i class="bi bi-play-circle me-1"></i> Video Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Project 3 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="web">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=500&fit=crop" alt="Admin Dashboard">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Web Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Admin Dashboard</h3>
+                            <p class="text-muted mb-3">Dashboard analytics dan management system dengan data visualization, user management, dan real-time reporting untuk business intelligence.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">Laravel</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Chart.js</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> Preview
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">
+                                    <i class="bi bi-file-text me-1"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Project 3 -->
+                <div class="col-lg-6 portfolio-item-wrapper" data-category="mobile">
+                    <div class="portfolio-detail-card">
+                        <div class="portfolio-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop" alt="Mobile Banking">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-badge">Mobile Development</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Mobile Banking App</h3>
+                            <p class="text-muted mb-3">Aplikasi mobile banking dengan high security, biometric authentication, transfer antar bank, QRIS payment, dan financial management tools.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-badge">Kotlin</span>
+                                <span class="tech-badge">Jetpack Compose</span>
+                                <span class="tech-badge">Room DB</span>
+                                <span class="tech-badge">Retrofit</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">
+                                    <i class="bi bi-shield-check me-1"></i> Security Info
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-pill">
+                                    <i class="bi bi-journal-code me-1"></i> Features
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="mb-3">Tertarik Bekerja Sama?</h2>
+            <p class="lead mb-4">Punya ide atau kebutuhan digital? Mari diskusikan dan wujudkan solusi yang tepat untuk bisnis Anda.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg rounded-pill">
+                <i class="bi bi-chat-dots me-2"></i>Let's Talk
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="footer-brand"><span class="brand-pixel">=</span>donitech</div>
+                    <p class="mb-0">© 2025 Donitech. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 text-center">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/dnisetyaw" target="_blank" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dnisetyaw" target="_blank" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/6285757501928" target="_blank" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="footer-links">
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="index.html#testimonials">About</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6285757501928?text=Halo%20Doni,%20saya%20tertarik%20dengan%20portfolio%20Anda" 
+       target="_blank" 
+       class="whatsapp-float" 
+       aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
